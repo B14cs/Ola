@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hiba</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Ola</a>
+        <nav class="navigation">
+            <a href="#images">images</a>
+            <a href="#vedio">Vedio</a>
+            <a href="#audio">Audio</a>
+            <a href="#contact">Contact</a>
+            <a href="#" onclick="document.getElementById('factorial').style.display='block'">Factorial</a>
+            <a href="#" onclick="document.getElementById('login').style.display='block'">Login</a>
+        </nav>
+    </header>
+
+    <div id="login" class="modal">
+        <form class="modal-content animate" action="#">
+            <div class="container">
+                <label for="Username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username.." name="Username" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password.." name="psw" required>
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" required name="remember"> I agree
+                </label>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+            <div class="container">
+                <button type="button" onclick="document.getElementById('login').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="factorial" class="modal">
+        <form class="modal-content animate" action="#">
+            <div class="container">
+                <label for="number"><b>Factorial</b></label>
+                <input type="text" placeholder="Enter a number.." id="number" required>
+                <button onclick="factorial()">Get factorial</button>
+                <button class="cancel" type="button"
+                    onclick="document.getElementById('factorial').style.display='none'">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <section class="main">
+        <div>
+            <h2>Hello, I'm Ola<br><span>Statistic & CS student</span></h2>
+            <h3>That's my web course's project</h3>
+            <a href="#images" class="main-btn">View my work</a>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="images" id="images">
+        <h2 class="title">Image gallery</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image/images (1).jfif" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>Dev Books</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image/images (2).jfif" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>Dev Books</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image/images (3).jfif" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>Dev Books</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image/images (4).jfif" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>Dev Books</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image/images (5).jfif" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>Dev Books</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image/images (6).jfif" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>Internet</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards" id="vedio">
+        <h2 class="title">Video</h2>
+        <div class="content">
+            <div class="vedio">
+                <div class="info">
+                    <h3>Vedio</h3>
+                    <p>Research and write scripts for different topics that can then be directly recorded for video
+                        production</p>
+                </div>
+                <center>
+                    <video autoplay
+                        src="/vedio/Are you ready kids_ Aye Aye Captain I can’t hear you! Aye Aye Captain Oh!.mp4"
+                        controls></video>
+                </center>
+            </div>
+        </div>
+    </section>
+
+    <section class="images" id="audio">
+        <h2 class="title">Audio</h2>
+        <div class="content">
+            <div class="audio">
+                <div class="info">
+                    <h3>Audio</h3>
+                    <p>Research and write scripts for different topics that can then be directly recorded for video
+                        production</p>
+                </div>
+                <center>
+                    <audio controls>
+                        <source src="audio/Spongebob Fail Sound Effect .mp3" type="audio/mp3">
+                    </audio>
+                </center>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards contact" id="contact">
+        <h2 class="title">Let's work together</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+24900000000</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>--@gmil.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-title">Copyrights &copy <span>Ola</span></p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        var modal = document.getElementById('login');
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function factorial() {
+            var i, number, factorial;
+            factorial = 1.0;
+            number = Number(document.getElementById("number").value);
+            for (i = 1; i <= number; i++) {
+                factorial *= i;
+            }
+            alert("The factorial is " + factorial)
+        }
+
+    </script>
+
+</body>
+
+</html>
